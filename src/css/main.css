@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13;
+    line-height: 19.5px;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.wrapper {
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.wrapper>* {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.header {
+    text-align: center;
+    background: #357EFF;
+    color: white;
+    display: flex;
+    height: 67px;
+}
+
+.header>* {
+    align-items: center;
+}
+
+.page-titel {
+    margin: auto;
+}
+
+.header-right {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 5px;
+}
+
+.header-right>* {
+    margin: 5px;
+}
+
+.hero {
+    background: linear-gradient( #3B4259 50%, #e4ebf2 50%);
+}
+
+.hero-header {
+    padding-top: min(75px 10%);
+    padding-bottom: min(75px 10%);
+    
+}
+
+.hero-img {
+    max-width: 800px;
+    padding-left: min(25px, 5%);
+    padding-right: min(25px, 5%);
+}
+
+.signup>* {
+    color: black;
+}
+
+.about {
+    background: #f8fafc;
+}
+
+.about-hero {
+    color: black;
+}
+
+.about-boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.about-boxes>* {
+    padding: 10px;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    text-align: left;
+}
+
+.aside1 {
+    background: #726bcd;
+    order: 1
+}
+
+.aside2 {
+    background: #f8aa44;
+    order: 2
+}
+
+.aside3 {
+    background: #52cf69;
+    order: 3
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    background: #3B4259;
+    padding: 40px;
+}
+
+.foot-col1 {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    max-width: 500px;
+}
+
+.links {
+    display: flex;
+    flex-flow: row;
+}
+
+.foot-social-img {
+    display: flex;
+    flex-flow: row;
+    margin-top: auto;
+}
+
+.foot-social-img>* {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.foot-col2 {
+    flex: 2;
+    max-width: 375px;
+    margin-left: auto;
+}
+
+.foot-col2>* {
+    text-align: left;
+}
+
+.foot-sub1 {
+    flex: 1;
+}
+
+.foot-sub2 {
+    flex: 2;
+}
+
+.foot-sub3 {
+    flex: 3;
+}
+
+/* 
+@media all and (min-width: 800px){
+    .aside1 {
+        order: 1
+    }
+    .aside2 {
+        order: 2
+    }
+    .aside3 {
+        order: 3
+    }
+} */
