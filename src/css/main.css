@@ -147,7 +147,7 @@ input[type=submit] {
 }
 
 .signup-notice {
-    font-size: 13px;
+    font-size: 11px;
     color: gray;
 }
 
@@ -271,12 +271,23 @@ footer>*>* {}
 /* @main all {width < 800} */
 
 /* Forms and Input */
+
+.mini-form {
+    display:flex;
+    width: 500px;
+    max-width: 40rem;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+    text-align: left;
+    align-items: center;
+}
+
 .form-wrapper {
     position: relative;
     max-width: 40rem;
-    margin: 5rem auto;
+    margin: 2rem auto;
     width: 100%;
-    padding: 3rem 5rem 0;
     border-radius: 1px;
     text-align: left;
 }
@@ -286,7 +297,10 @@ footer>*>* {}
     width: 100%;
     position: relative;
     margin-bottom:40px;
+}
 
+.front {
+    margin-bottom:0px;
 }
 
 .input-data input,
@@ -294,8 +308,16 @@ footer>*>* {}
     height: 100%;
     width: 100%;
     border: none;
+    outline: none;
     font-size: 17px;
     border-bottom:1px solid rgb(140, 180, 255);
+    color: rgb(87, 89, 98);
+}
+
+.front input {
+    border:1px solid rgb(140, 180, 255);
+    border-radius: 3px;
+    padding-left:4px;
 }
 
 .input-data input:focus ~ label,
@@ -306,6 +328,7 @@ footer>*>* {}
     font-size:14px;
     color: #ccc;
     border:none;
+    outline: none;
 }
 
 
@@ -318,12 +341,22 @@ footer>*>* {}
     transition: all 0.3s ease;
 }
 
+.front label {
+    left:15px;
+}
+
 .input-data .underline {
     position: absolute;
     color:grey;
     bottom:0px;
     height:2px;
     width:100%;
+}
+
+.front .underline {
+    left:4px;
+    width:99.5%;
+
 }
 
 .input-data .underline:before {
@@ -355,16 +388,24 @@ footer>*>* {}
     color: white;
     padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 3px;
     margin: 4px 2px;
     margin-left:0px;
-    width: 100%;
     opacity: 1;
     transition: 0.3s;
-    display: inline-block;
     text-decoration: none;
     cursor: pointer;
+}
+
+.btn-block {
+    width: 100%;
+    display: inline-block;
+}
+
+.ml {
+    margin-top:4px;
+   margin-left:20px; 
 }
 
 .button:hover {
