@@ -1,11 +1,15 @@
+/* sight defaults */
+
+@import url('http://fonts.cdnfonts.com/css/bahnschrift');
 * {
     margin: 0;
     padding: 0;
     color: white;
     font-family: "Open Sans", sans-serif;
-    font-size: 13;
+    font-size: 15px;
     line-height: 19.5px;
     text-decoration: none;
+    font-weight: 400;
 }
 
 img {
@@ -15,7 +19,41 @@ img {
 
 h1 {
     font-family: 'Bahnschrift', sans-serif;
+    line-height: 45px;
+    font-size: 33px;
+    padding: 5px;
 }
+
+.dark-font {
+    color: rgb(87, 89, 98);
+}
+
+.dark-font-child>* {
+    color: rgb(87, 89, 98);
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid rgb(87, 89, 98);
+    font-size: 20px;
+    height: 60px;
+}
+
+input[type=submit] {
+    background-color: #357EFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 60px;
+}
+
+/* main wrapper */
 
 .wrapper {
     margin: 0px;
@@ -25,63 +63,100 @@ h1 {
 }
 
 .wrapper>* {
-    padding: 0px;
+    padding: 50px;
     margin: 0px;
     border-radius: 0px;
 }
+
+/* header */
 
 .header {
     text-align: center;
     background: #357EFF;
     color: white;
     display: flex;
-    height: 67px;
+    max-height: 70px;
+    min-height: 60px;
+    padding: 0px;
 }
 
 .header>* {
     align-items: center;
 }
 
-.page-titel {
-    margin: auto;
+.logo {
+    box-sizing: border-box;
+    float: none;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 55px;
+    width: 140px;
+    margin-top: 2px;
+}
+
+.header-right>* {
+    margin: 5px;
+    width: max-content;
 }
 
 .header-right {
     display: flex;
     flex-flow: row-reverse;
     margin: 5px;
+    margin-left: auto;
+    margin-right: 8px;
+    text-align: right;
 }
 
-.header-right>* {
-    margin: 5px;
-}
+/* hero */
 
 .hero {
     background: linear-gradient( #3B4259 50%, #e4ebf2 50%);
 }
 
 .hero-header {
-    padding-top: min(75px 10%);
-    padding-bottom: min(75px 10%);
-    
+    padding-top: min(25px, 5%);
+    padding-bottom: min(75px, 10%);
 }
 
 .hero-img {
-    max-width: 800px;
-    padding-left: min(25px, 5%);
-    padding-right: min(25px, 5%);
+    max-width: 1226px;
 }
 
-.signup>* {
-    color: black;
+/* signup */
+
+.signup-p {
+    padding: 10px;
+    padding-bottom: 30px;
 }
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.form>* {
+    margin: 15px;
+}
+
+.email-input {
+    max-width: 500px;
+}
+
+.signup-notice {
+    font-size: 13px;
+    color: gray;
+}
+
+/* about */
 
 .about {
     background: #f8fafc;
-}
-
-.about-hero {
-    color: black;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .about-boxes {
@@ -92,10 +167,9 @@ h1 {
 
 .about-boxes>* {
     padding: 10px;
-    border-radius: 5px;
-    height: 250px;
-    width: 250px;
-    margin: 50px;
+    height: 290px;
+    width: 290px;
+    margin: 40px;
     text-align: left;
 }
 
@@ -114,18 +188,20 @@ h1 {
     order: 3
 }
 
+/* footer */
+
 .footer {
     display: flex;
     flex-flow: row wrap;
     background: #3B4259;
     padding: 40px;
+    min-height: 275px;
 }
 
 .foot-col1 {
     flex: 1;
     display: flex;
     flex-flow: column;
-    max-width: 500px;
 }
 
 .links {
@@ -133,26 +209,10 @@ h1 {
     flex-flow: row;
 }
 
-.foot-social-img {
-    display: flex;
-    flex-flow: row;
-    margin-top: auto;
-}
-
-.foot-social-img>* {
-    padding: 5px;
-    height: 50px;
-    width: 50px;
-}
-
-.foot-col2 {
-    flex: 2;
-    max-width: 375px;
-    margin-left: auto;
-}
-
-.foot-col2>* {
+.links>* {
     text-align: left;
+    padding-top: 15px;
+    max-width: 230px;
 }
 
 .foot-sub1 {
@@ -167,15 +227,45 @@ h1 {
     flex: 3;
 }
 
-/* 
-@media all and (min-width: 800px){
-    .aside1 {
-        order: 1
-    }
-    .aside2 {
-        order: 2
-    }
-    .aside3 {
-        order: 3
-    }
-} */
+footer>*>* {}
+
+.foot-social-img {
+    display: flex;
+    flex-flow: row;
+    margin-top: auto;
+}
+
+.foot-social-img>* {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+.foot-col2 {
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+    max-width: 365px;
+}
+
+.foot-col2>* {
+    text-align: left;
+}
+
+.footer-logo {
+    max-height: 55px;
+    flex: 1;
+}
+
+.footer-p {
+    flex: 2;
+}
+
+.copyright {
+    flex: 3;
+    margin-top: auto;
+    min-height: 15px;
+}
+
+/* @main all {width < 800} */
