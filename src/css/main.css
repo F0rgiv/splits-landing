@@ -32,27 +32,6 @@ h1 {
     color: rgb(87, 89, 98);
 }
 
-input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    border: 1px solid rgb(87, 89, 98);
-    font-size: 20px;
-    height: 60px;
-}
-
-input[type=submit] {
-    background-color: #357EFF;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 20px;
-    height: 60px;
-}
-
 /* main wrapper */
 
 .wrapper {
