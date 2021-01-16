@@ -72,6 +72,7 @@ h1 {
     transform: translateX(-50%);
     height: 30px;
     margin-top: 15px;
+    width: auto
 }
 
 .header-right>* {
@@ -127,6 +128,11 @@ h1 {
 .signup-notice {
     font-size: 11px;
     color: gray;
+}
+
+.thank-you{
+    white-space: pre;
+    margin-right: 20px;
 }
 
 /* about */
@@ -234,6 +240,7 @@ h1 {
     max-height: 30px;
     flex: 1;
     padding-bottom: 20px;
+    width: 165px;
 }
 
 .footer-p {
@@ -242,7 +249,7 @@ h1 {
 
 .copyright {
     flex: 3;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 /* @main all {width < 800} */
