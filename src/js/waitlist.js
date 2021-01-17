@@ -1,5 +1,5 @@
 //populate email if already exists
 if (sessionStorage.email) {
-    document.getElementById('email-id').innerHTML = sessionStorage.email
+    document.getElementsByName('email')[0].value = sessionStorage.email
 } else if (localStorage.email) {
-     document.getElementById('email-id').innerHTML = localStorage.email }
+    document.getElementsByName('email')[0].value = localStorage.email }
