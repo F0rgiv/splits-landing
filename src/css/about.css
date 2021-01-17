@@ -16,12 +16,23 @@
     flex-flow: row wrap;
 }
 
+
+.creator-wrapper {
+    display: flex;
+    align-items:center; 
+    align-content: flex-end;
+}
+
+.creator-two {
+    size 
+}
+
 .creaters>p {
     align-self: center;
     margin-top: 50px;
 }
 
-.creaters>img {
+.creaters>.creator-wrapper>img {
     width: 150px;
     border-radius: 75px;
     margin-top: 50px;
