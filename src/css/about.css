@@ -1,0 +1,54 @@
+/* Override main css settings */
+
+.wrapper {
+    text-align: left;
+}
+
+.break {
+    margin: 0px;
+}
+
+/* Creaters section */
+
+.creaters {
+    background: #3B4259;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.creaters>p {
+    align-self: center;
+    margin-top: 50px;
+}
+
+.creaters>img {
+    width: 150px;
+    border-radius: 75px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* about */
+
+.about {
+    padding: 50px;
+    background: #e4ebf2;
+}
+
+/* features */
+
+.features {
+    display: flex;
+    flex-flow: column;
+}
+
+.features>* {
+    margin: 5px;
+    padding: 0px;
+}
+
+/* pitch */
+
+.pitch {
+    color: #f8fafc;
+}
