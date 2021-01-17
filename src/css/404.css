@@ -1,0 +1,15 @@
+* {
+    text-align: left;
+}
+
+.wrapper>* {
+    padding: 15px;
+}
+
+.wrapper>a {
+    text-decoration: underline;
+}
+
+.wrapper>p>a {
+    text-decoration: underline;
+}
