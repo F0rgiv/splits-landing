@@ -9,8 +9,13 @@ for (let obj of after_email_objs) {
 }
 
 //populate email if already exists
-if (localStorage.email) {
+if (sessionStorage.email) {
     hideSignup();
+}
+
+//pop message if they have already signed p with an email.
+if (localStorage.email && !sessionStorage.email) {
+    document.getElementById("email-input-label").innerHTML = "Entering " + localStorage.email + "? ;)"
 }
 
 //override and handel form submit
@@ -24,6 +29,7 @@ var email_form = document.getElementById('email-form'),
             ev.returnValue = false;
         }
         //update local storage for email
+        sessionStorage.email = document.getElementsByClassName('email-input')[0].value;
         localStorage.email = document.getElementsByClassName('email-input')[0].value;
         //hide appropriate elements and populate thankyou text
         hideSignup();
@@ -45,7 +51,7 @@ function hideSignup() {
     for (let obj of before_email_objs) {
         obj.style.display = "none";
     }
-    document.getElementsByClassName('thank-you')[0].textContent += " " + localStorage.email
+    document.getElementsByClassName('thank-you')[0].textContent += " " + sessionStorage.email
 
     //todo ajax call to save records
 }
