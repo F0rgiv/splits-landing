@@ -36,7 +36,7 @@ function updateList() {
     //prep to show data.
     document.getElementById('thank-you').innerHTML = "Thank you " + name + "!"
     document.getElementById('thank-you-msg').innerHTML = "We will be providing updates to you at " +
-        email + " and may reach out at " + tel +
+        email + " and may reach out to you at " + tel +
         " to get your recommendations and feedback on the product."
 
     //show thank you msg.
