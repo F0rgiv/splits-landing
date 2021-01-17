@@ -1,10 +1,10 @@
 
 //define needed vars
-var after_email_objs = document.getElementsByClassName("after-email-signup")
-var before_email_objs = document.getElementsByClassName("before-email-signup")
+var afterEmailObjs = document.getElementsByClassName("after-email-signup")
+var beforeEmailObjs = document.getElementsByClassName("before-email-signup")
 
 //hide not yet used elements
-for (let obj of after_email_objs) {
+for (let obj of afterEmailObjs) {
     obj.style.display = "none";
 }
 
@@ -19,7 +19,7 @@ if (localStorage.email && !sessionStorage.email) {
 }
 
 //override and handel form submit
-var email_form = document.getElementById('email-form'),
+var emailForm = document.getElementById('email-form'),
     handler = function (ev) {
         ev = ev || window.event;
         if (ev.preventDefault) { //w3c browsers
@@ -38,21 +38,21 @@ var email_form = document.getElementById('email-form'),
         //hide appropriate elements and populate thankyou text
         hideSignup();
     };
-if (email_form) {
-    if (email_form.addEventListener) {
-        email_form.addEventListener('submit', handler, false)
+if (emailForm) {
+    if (emailForm.addEventListener) {
+        emailForm.addEventListener('submit', handler, false)
     }
-    else if (email_form.attachEvent) {
-        email_form.attachEvent('onsubmit', handler);
+    else if (emailForm.attachEvent) {
+        emailForm.attachEvent('onsubmit', handler);
     }
 }
 
 // proccess email capture
 function hideSignup() {
-    for (let obj of after_email_objs) {
+    for (let obj of afterEmailObjs) {
         obj.style.display = "block";
     }
-    for (let obj of before_email_objs) {
+    for (let obj of beforeEmailObjs) {
         obj.style.display = "none";
     }
     document.getElementsByClassName('thank-you')[0].textContent += " " + sessionStorage.email
