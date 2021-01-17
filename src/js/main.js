@@ -28,9 +28,13 @@ var email_form = document.getElementById('email-form'),
         else { //IE old
             ev.returnValue = false;
         }
-        //update local storage for email
+        //update local and session storage for email
         sessionStorage.email = document.getElementsByClassName('email-input')[0].value;
         localStorage.email = document.getElementsByClassName('email-input')[0].value;
+
+        //perform ajax call to store in db
+        //TODO
+
         //hide appropriate elements and populate thankyou text
         hideSignup();
     };
