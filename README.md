@@ -1,5 +1,5 @@
 # splits-landing
-James Manosur and Michael Carr group project
+#### James Manosur and Michael Carr group project
 Landing page for a royalty accounting software as a service which solves the problem of distributing shares of royalties own for streams and downloads of songs and albums.
 The overall problem domain and how the project solves those problems
 
