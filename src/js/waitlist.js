@@ -34,7 +34,6 @@ function updateList() {
     document.getElementById('form-door').style.display = "none";
 
     //prep to show data.
-    document.getElementById('thank-you-wrapper').style.display = 'flex';
     document.getElementById('thank-you').innerHTML = "Thank you " + name + "!"
     document.getElementById('thank-you-msg').innerHTML = "We will be providing updates to you at " +
         email + " and may reach out to you at " + tel +
@@ -42,7 +41,7 @@ function updateList() {
 
     //show thank you msg.
     for (let obj of toHide) {
-        obj.style.display = "block";
+        obj.style.display = "flex";
     }
 
 }
