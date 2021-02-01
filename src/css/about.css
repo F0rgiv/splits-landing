@@ -14,6 +14,7 @@
     background: #3B4259;
     display: flex;
     flex-flow: row wrap;
+    padding:20px;
 }
 
 .creator-wrapper {
@@ -36,15 +37,18 @@
 /* about */
 
 .about {
-    padding: 50px;
+    padding: 20px;
     background: #e4ebf2;
 }
 
 /* features */
 
 .features {
+
     display: flex;
     flex-flow: column;
+    padding: 20px;
+
 }
 
 .features>* {
@@ -56,4 +60,5 @@
 
 .pitch {
     color: #f8fafc;
+    margin: 20px;
 }

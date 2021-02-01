@@ -113,7 +113,8 @@ h1 {
 /* signup */
 
 .signup {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .signup-p {
 }
@@ -142,11 +143,66 @@ h1 {
     padding-bottom: 15px;
 }
 
+#thank-you-wrapper {
+
+    min-height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.45;
+
+}
+
+.main {
+    position: absolute;
+    top:150%;
+    z-index: 1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+      top:135%;
+      left:-30px;
+    }
+  }
+
+section img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#thank-you-wrapper h1 {
+    position: relative;
+    color:#357EFF;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
 /* about */
 
 .about {
     background: #f8fafc;
-    padding-top:30px;
+    padding-top:40px;
+    padding-bottom:50px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -171,6 +227,8 @@ h1 {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
     transition: 0.5s ease-in-out;
     opacity: 0.9;
+    z-index: 2;
+
 }
 
 .card:hover {
@@ -434,6 +492,13 @@ h1 {
     padding-left: 5%;
     
 }
+
+@media only screen and (min-width: 1200px) {
+    #slider-center {
+        width: 60%;
+        padding-left: 20%;
+    }
+  }
 
 #slider {
     overflow: hidden;

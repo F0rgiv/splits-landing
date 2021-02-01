@@ -16,62 +16,79 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <div class="header">
             <!-- <h1 class="page-titel">Splits</h1> -->
             <a href="main.html"><img src="img/logo.svg" class="logo"></a>
-            <div class="header-right">
-                <a href="waitlist.html">Join waitlist</a>
-                <no-link>|</no-link>
-                <a href="https://www.soundsplits.com">Login</a>
+            <div class="header-links">
+                <a class="nav-link" href="waitlist.html">Join waitlist</a>
+                <no-link>&nbsp;|&nbsp;</no-link>
+                <a class="nav-link" href="https://www.soundsplits.com">Login</a>
             </div>
-        </header>
-
-        
-        <div class="form-wrapper" id="form-wrapper">
-            <h1 class="hero-header dark-font">Join the waitlist and we'll get you on board as soon as possible.</h1>
-            <form class="form-control" method="." id="waitlist-form">
-                <div class="input-data">
-                    <input name="name" type="text" required>
-                    <div class="underline"></div>
-                    <label for="name">Name</label>
-                </div>
-                <div class="input-data">
-                    <input id="email-id" name="email" type="email" required>
-                    <div class="underline"></div>
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-data">
-                    <input name="tel" type="tel" pattern="[0-9]{9,11}" required>
-                    <div class="underline"></div>
-                    <label for="tel">Phone</label>
-                </div>
-                <div class="input-data">
-                    <textarea name="help" cols="50" rows="6"></textarea>
-                    <div class="underline"></div>
-                    <label for="help">Tell us a little about your business needs</label>
-                </div>
-                <button class="button btn-block">Join waitlist</button>
-            </form>
         </div>
+        <div class="form-wrapper" id="form-wrapper">
+            <div class="form-door" id="form-door">
+                <h1 class="hero-header dark-font">Join the waitlist and we'll get you on board as soon as possible.</h1>
+                <form class="form-control" method="." id="waitlist-form">
+                    <div class="input-data">
+                        <input name="name" type="text" required>
+                        <div class="underline"></div>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="email-id" name="email" type="email" required>
+                        <div class="underline"></div>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-data">
+                        <input name="tel" type="tel" pattern="[0-9]{9,11}" required>
+                        <div class="underline"></div>
+                        <label for="tel">Phone</label>
+                    </div>
+                    <div class="input-data">
+                        <textarea name="help" cols="50" rows="6" required></textarea>
+                        <div class="underline"></div>
+                        <label for="help">Tell us a little about your business needs</label>
+                    </div>
+                    <button class="button btn-block">Join waitlist</button>
+                </form>
+            </div>
+            
+            <div class="" id='thank-you-wrapper'>
 
-        <h1 class="hiden dark-font" id="thank-you"></h1>
-        <p class="hiden dark-font" id="thank-you-msg"></p>
-
+                <h1 class="hiden layer" data-speed="1" id="thank-you"></h1>
+                <p class="hiden dark-font layer" data-speed="1" id="thank-you-msg"></p>
+            </div>
+        </div>
+        <section class="hiden">
+            <img src='img/shapes/1.png' data-speed="-5" class="layer">
+            <img src='img/shapes/2.png' data-speed="-1" class="layer">
+            <img src='img/shapes/3.png' data-speed="-2" class="layer">
+            <img src='img/shapes/4.png' data-speed="-3" class="layer">
+            <img src='img/shapes/5.png' data-speed="-4" class="layer">
+            <img src='img/shapes/6.png' data-speed="4" class="layer">
+            <img src='img/shapes/7.png' data-speed="3" class="layer">
+            <img src='img/shapes/8.png' data-speed="2" class="layer">
+            <img src='img/shapes/9.png' data-speed="1" class="layer">
+            <img src='img/shapes/10.png' data-speed="1" class="layer">
+            <img src='img/shapes/11.png' data-speed="4" class="layer">
+            <img src='img/shapes/12.png' data-speed="3" class="layer">
+        </section>
         <footer class="footer">
             <div class="foot-col1">
                 <div class="links">
                     <div class="foot-sub1">
                         <a href="about.html">About</a><br /><br />
-                        <a href="404.html">Company</a><br /><br />
-                        <a href="404.html">Merch</a><br /><br />
-                    </div>
-                    <div class="foot-sub2">
-                        <a href="404.html">Product Blog</a><br /><br />
-                        <a href="404.html">Product Roadmap</a><br /><br />
-                    </div>
-                    <div class="foot-sub3">
                         <a href="https://www.soundsplits.com">Customer Login</a><br /><br />
                         <a href="waitlist.html">Join waitlist</a><br /><br />
+                        <!-- <a href="404.html">Company</a><br /><br /> -->
+                        <!-- <a href="404.html">Merch</a><br /><br /> -->
+                    </div>
+                    <div class="foot-sub2">
+                        <!-- <a href="404.html">Product Blog</a><br /><br /> -->
+                        <!-- <a href="404.html">Product Roadmap</a><br /><br /> -->
+                    </div>
+                    <div class="foot-sub3">
+
                     </div>
                 </div>
                 <div class="foot-social-img">
@@ -82,17 +99,18 @@
             </div>
             <div class="foot-col2">
                 <img class="footer-logo" src="img/logo_fn.svg" alt="">
-                <p class="footer-p">Sound Splits is a royalty accounting, software as a service, app built for
-                    indie
-                    music labels and songwriter collectives who need an easy to use, accurate and trustworthy royalty
+                <p class="footer-p">Sound Splits is a royalty accounting, software as a service, built for
+                    indie music labels and songwriter collectives who need an easy to use, accurate and trustworthy
+                    royalty
                     reporting system. Sound Splits helps you manage your most important asset-- your intellectual
                     property--
                     by helping you keep your catalog organized, clean and most importantly, actionable.</p>
-                <copyrightp class="copyright">Terms of Service Privacy Policy ©2021 mjbaby, llc</copyright>
+                <p class="copyright">Terms of Service | Privacy Policy | &copy;2021 mjbaby, LLC</p>
             </div>
         </footer>
     </div>
     <script src="js/waitlist.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 
 </html>

@@ -31,9 +31,10 @@ function updateList() {
     name = name.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 
     //hide form.
-    document.getElementById('form-wrapper').style.display = "none";
+    document.getElementById('form-door').style.display = "none";
 
     //prep to show data.
+    document.getElementById('thank-you-wrapper').style.display = 'flex';
     document.getElementById('thank-you').innerHTML = "Thank you " + name + "!"
     document.getElementById('thank-you-msg').innerHTML = "We will be providing updates to you at " +
         email + " and may reach out to you at " + tel +
@@ -43,4 +44,5 @@ function updateList() {
     for (let obj of toHide) {
         obj.style.display = "block";
     }
+
 }

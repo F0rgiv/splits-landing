@@ -56,6 +56,5 @@ function hideSignup() {
         obj.style.display = "none";
     }
     document.getElementsByClassName('thank-you')[0].textContent += " " + sessionStorage.email
-
     //todo ajax call to save records
 }
