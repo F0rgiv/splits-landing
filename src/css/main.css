@@ -168,7 +168,7 @@ section {
 
 .main {
     position: absolute;
-    top:150%;
+    top:140%;
     z-index: 1;
 
 }
@@ -278,6 +278,7 @@ section img {
     background: #3B4259;
     padding: 40px;
     min-height: 275px;
+    z-index: 5;
 }
 
 .foot-col1 {
